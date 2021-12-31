@@ -1,0 +1,52 @@
+body{
+    background-color:brown;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #A71CFF;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.cinereousTable {
+    border: 6px solid #948473;
+    background-color: #FFE3C6;
+    width: 100%;
+    text-align: center;
+}
+.cinereousTable td, table.cinereousTable th {
+    border: 1px solid #948473;
+    padding: 4px 4px;
+}
+.cinereousTable tbody td {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #A71CFF;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+.cinereousTable thead {
+    background: #948473;
+    background: -moz-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+    background: -webkit-linear-gradient(top, #afa396 0%, #9e9081 66%, #948473 100%);
+    background: linear-gradient(to bottom, #afa396 0%, #9e9081 66%, #948473 100%);
+}
+.cinereousTable thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #F0F0F0;
+    text-align: left;
+    border-left: 2px solid #948473;
+}
+.cinereousTable thead th:first-child {
+    border-left: none;
+}

@@ -1,245 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>USER_CRUD_MVC</title>
+</head>
+<body>
+<header>
 
-    <!-- Custom fonts for this template-->
-    <!-- <link href="./index_files/all.min.css" rel="stylesheet" type="text/css">
-    <link href="./index_files/css" rel="stylesheet"> -->
+    <nav class="navbar navbar-light bg-warning navbar-expand-md">
 
-    <!-- Custom styles for this template-->
-    <link href="./css/sb-admin-2.min.css" rel="stylesheet">
-
-    <style type="text/css">/* Chart.js */
-    @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
-
-<body id="page-top">
-
-<!-- Page Wrapper -->
-<div id="wrapper">
-
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-        <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/index.html">
-            <div class="sidebar-brand-icon rotate-n-15">
-                <i class="fas fa-laugh-wink"></i>
-            </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-        </a>
-
-        <!-- Divider -->
-
-
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-            <a class="nav-link" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/index.html">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span></a>
-        </li>
-
-        <!-- Divider -->
-
-
-        <!-- Heading -->
-
-
-
-        <li class="nav-item">
-
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Custom Components:</h6>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/buttons.html">Buttons</a>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/cards.html">Cards</a>
-                </div>
-            </div>
-        </li>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-
-            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Custom Utilities:</h6>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/utilities-color.html">Colors</a>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/utilities-border.html">Borders</a>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/utilities-animation.html">Animations</a>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/utilities-other.html">Other</a>
-                </div>
-            </div>
-        </li>
-
-        <!-- Divider -->
-
-
-        <!-- Heading -->
-
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-
-            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Login Screens:</h6>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/login.html">Login</a>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/register.html">Register</a>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/forgot-password.html">Forgot Password</a>
-                    <div class="collapse-divider"></div>
-                    <h6 class="collapse-header">Other Pages:</h6>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/404.html">404 Page</a>
-                    <a class="collapse-item" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/blank.html">Blank Page</a>
-                </div>
-            </div>
-        </li>
-
-        <!-- Nav Item - Charts -->
-        <li class="nav-item">
-
-        </li>
-
-        <!-- Nav Item - Tables -->
-        <li class="nav-item">
-
-        </li>
-
-        <!-- Divider -->
-
-
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        <div class="collapse navbar-collapse" id="mainmenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">User List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Add User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Edit User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Show User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Delete User</a>
+                </li>
+            </ul>
         </div>
-
-    </ul>
-    <!-- End of Sidebar -->
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-        <!-- Main Content -->
-        <div id="content">
-
-            <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                <!-- Sidebar Toggle (Topbar) -->
-                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                    <i class="fa fa-bars"></i>
-                </button>
-
-                <!-- Topbar Search -->
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-
-                        <div class="input-group-append">
-
-                        </div>
-                    </div>
-                </form>
-
-                <!-- Topbar Navbar -->
+    </nav>
+</header>
 
 
-            </nav>
-            <!-- End of Topbar -->
-
-            <!-- Begin Page Content -->
-            <div class="container-fluid">
-
-                <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                    <a href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/index.html#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
-                </div>
-
-                <!-- Content Row -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-                <!-- Content Row -->
+<footer class="text-center text-lg-start bg-warning text-muted" id="footer">
 
-
-
-                <!-- Content Row -->
-                <div class="row">
-
-                    <!-- Content Column -->
-
-
-
-                </div>
-
-            </div>
-            <!-- /.container-fluid -->
-
-        </div>
-        <!-- End of Main Content -->
-
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright © Your Website 2019</span>
-                </div>
-            </div>
-        </footer>
-        <!-- End of Footer -->
-
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="#">mariuszkucinski.com</a>
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- Copyright -->
+</footer>
 
-</div>
-<!-- End of Page Wrapper -->
-
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/index.html#page-top" style="display: none;">
-    <i class="fas fa-angle-up"></i>
-</a>
-
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="file:///home/piotr/Pulpit/WorkShop3/src/main/webapp/theme/login.html">Logout</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Bootstrap core JavaScript-->
-<script src="./index_files/jquery.min.js"></script>
-<script src="./index_files/bootstrap.bundle.min.js"></script>
-
-<!-- Core plugin JavaScript-->
-<script src="./index_files/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for all pages-->
-<script src="./index_files/sb-admin-2.min.js"></script>
-
-<!-- Page level plugins -->
-<script src="./index_files/Chart.min.js"></script>
-
-<!-- Page level custom scripts -->
-<script src="./index_files/chart-area-demo.js"></script>
-<script src="./index_files/chart-pie-demo.js"></script>
-
-
-
-
-</body></html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
