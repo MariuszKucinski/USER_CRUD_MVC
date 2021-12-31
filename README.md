@@ -19,7 +19,7 @@ Servlets operate on data and shows it in Jsp files</br>
 3)Open project as "new project from existing source", check Maven project and "import project from external mode"</br>
 4)Connect your IDE with MySQL and create database. </br>
 5)Configure Tomcat. Application context in deployment tab should looks like '/' and artifact should be set on 'war:exploded'</br>
-6)Navigate to resources. Open user.sql and execute all commands;
+6)Navigate to resources. Open user.sql and execute all commands. </br>
 Enjoy!</p> 
 </br>
 (PL) </br>
@@ -42,5 +42,5 @@ Serwlety operują na danych i pokazują je w plikach Jsp</br>
 3) Otwórz projekt jako „nowy projekt z istniejącego źródła”, wybierz projekt Maven i „importuj projekt z trybu zewnętrznego”</br>
 4) Połącz swoje IDE z MySQL i utwórz bazę danych. </br>
 5) Skonfiguruj Tomcata. Kontekst aplikacji na karcie wdrożenia powinien wyglądać tak - „/”, a artefakt powinien być ustawiony na „war:exploded”</br>
-6) Przejdź do zasobów. Otwórz user.sql i wykonaj wszystkie komendy;
+6) Przejdź do zasobów. Otwórz user.sql i wykonaj wszystkie komendy </br>
 Korzystaj!</p>
